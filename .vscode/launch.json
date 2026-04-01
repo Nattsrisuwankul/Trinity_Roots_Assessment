@@ -9,8 +9,9 @@
             "name": "Python Debugger: Odoo 18 with Arguments",
             "type": "debugpy",
             "request": "launch",
-            "program": "C:/odoo 18/odoo18/community/odoo-bin",
-            "python": "C:/odoo 18/odoo18/env18/Scripts/python.exe",
+            "program": "${workspaceFolder}/../../community/odoo-bin",
+            "python": "${workspaceFolder}/../../env18/Scripts/python.exe",
+            "cwd": "${workspaceFolder}/../..",
             "console": "integratedTerminal",
             "serverReadyAction": {
                 "action": "openExternally",
@@ -18,7 +19,7 @@
                 "uriFormat": "http://localhost:%s/web/login?db=odoo18_module_development"
             },
             "args": [
-                "--config=C:/odoo 18/odoo18/custom-addons/ODOO18-MODULE-DEVELOPMENT/odoo.conf",
+                "--config=${workspaceFolder}/odoo.conf",
                 "--http-port=8070",
                 "--database=odoo18_module_development",
                 "--db-filter=^odoo18_module_development$"

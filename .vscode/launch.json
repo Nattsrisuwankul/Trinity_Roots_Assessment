@@ -1,0 +1,28 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+
+        {
+            "name": "Python Debugger: Odoo 18 with Arguments",
+            "type": "debugpy",
+            "request": "launch",
+            "program": "C:/odoo 18/odoo18/community/odoo-bin",
+            "python": "C:/odoo 18/odoo18/env18/Scripts/python.exe",
+            "console": "integratedTerminal",
+            "serverReadyAction": {
+                "action": "openExternally",
+                "pattern": "running on .*:(\\d+)",
+                "uriFormat": "http://localhost:%s/web/login?db=odoo18_module_development"
+            },
+            "args": [
+                "--config=C:/odoo 18/odoo18/custom-addons/ODOO18-MODULE-DEVELOPMENT/odoo.conf",
+                "--http-port=8070",
+                "--database=odoo18_module_development",
+                "--db-filter=^odoo18_module_development$"
+            ]
+        }
+    ]
+}

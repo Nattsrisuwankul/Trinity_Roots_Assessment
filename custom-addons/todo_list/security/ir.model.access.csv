@@ -1,0 +1,5 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_todo_list_user,access.todo.list.user,model_todo_list,base.group_user,1,1,1,1
+access_todo_list_line_user,access.todo.list.line.user,model_todo_list_line,base.group_user,1,1,1,1
+access_todo_tag_user,access.todo.tag.user,model_todo_tag,base.group_user,1,1,1,1
+access_todo_list_attendee_user,access.todo.list.attendee.user,model_todo_list_attendee,base.group_user,1,1,1,1
